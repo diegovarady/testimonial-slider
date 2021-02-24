@@ -18,12 +18,14 @@ body {
     text-align: center;
 }
 
-.back .quote, .curve {    
+.back-left {    
     float: left;
+    width: 50%;    
 }
 
-.back .bg {
+.back-right {
     float: right;
+    width: 50%;    
 }
 
 .txt-img1 {
