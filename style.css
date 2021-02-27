@@ -16,7 +16,6 @@ body {
     height: 100%;
     z-index: -1;
     margin: 0 auto;
-    
 }
 
 .back-left {      
@@ -34,8 +33,7 @@ body {
 
 .curve, .quote, .bg {    
     width: 100%;
-    height: auto;
-    
+    height: auto;    
 }
 
 .back-left img {
@@ -57,7 +55,7 @@ body {
 
 .bg {
     height: 90%;
-    max-width: 90%;    
+    max-width: 90%;   
 }
 
 #txt-img2 {
@@ -117,6 +115,7 @@ body {
     color: hsl(240, 38%, 20%);
     height: auto;
     text-align: left;
+    line-height: 1.5;
     top: 29%;
     left: 16%;
     z-index: 3;
@@ -127,5 +126,226 @@ p em {
 }
 
 @media only screen and (max-width: 1440px) {
+    .curve {        
+        bottom: 15%;
+    }
+
+    .quote {
+        top: 18%;
+        left: 20%;  
+    }
+
+    .bg {
+        height: 75%;
+        max-width: 95%;         
+    }
+
+    .img .imag {
+        width: 37%;
+        height: 62%;        
+        top: 7%;
+        right: 8%;        
+    }   
     
+    .next-prev {       
+        top: 66%;
+        right: 33%;
+    }
+
+    .txt:first-child {
+        width: 46%;        
+        top: 23%;
+        left: 13%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .curve {        
+        bottom: 25%;
+    }
+
+    .quote {
+        top: 12%;
+        left: 20%;  
+    }
+
+    .bg {
+        height: 62%;
+        max-width: 98%;         
+    }
+
+    .img .imag {
+        width: 37%;
+        height: 51%;        
+        top: 6%;
+        right: 7%;        
+    }   
+    
+    .next-prev {       
+        top: 54%;
+        right: 32%;
+    }
+
+    .txt:first-child {
+        width: 48%;        
+        top: 13%;
+        left: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    .back {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .back-left {  
+        order: 2;   
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .back-right {
+        order: 1; 
+        width: 100%; 
+        height: 50vh;
+    }
+
+    .curve {
+        position: relative; 
+        bottom: 0%;     
+        top: 80%;
+        max-width: 70%;
+    }
+
+    .quote {
+        position: relative;   
+        top: 13%;
+        left: 45%;
+        max-width: 12%;  
+    }
+
+    .bg {
+        position: relative;   
+        height: 100%;
+        max-width: 60%;
+        left: 20%;
+    }
+
+    .txt-img {     
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .txt {
+        order: 2;   
+        width: 100%;
+        height: 50vh;        
+    }
+    
+    .img { 
+        order: 1;   
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .img .imag {
+        width: 45%;
+        height: 42%;        
+        top: 5%;
+        right: 28%;        
+    }   
+    
+    .next-prev {       
+        top: 44%;
+        right: 45%;
+    }
+
+    .txt:first-child {
+        width: 90%;
+        font-size: 32px;
+        text-align: center;
+        top: 58%;
+        left: 5%;
+    }    
+}
+
+@media only screen and (max-width: 600px) {
+    .curve {
+        position: relative;          
+        top: 85%;
+        max-width: 70%;
+    }
+
+    .quote {
+        position: relative;   
+        top: 13%;
+        left: 45%;
+        max-width: 18%;  
+    }
+
+    .bg {
+        height: 100%;
+        max-width: 80%;
+        left: 10%;
+    }
+
+    .img .imag {
+        width: 61%;
+        height: 41%;
+        right: 18%;        
+    }   
+    
+    .next-prev {       
+        top: 43%;
+        right: 40%;
+    }
+
+    .txt:first-child {
+        width: 90%;
+        font-size: 32px;
+        text-align: center;
+        top: 58%;
+        left: 5%;
+    }    
+}
+
+@media only screen and (max-width: 350px) {
+    .curve {
+        top: 35%;
+        max-width: 70%;
+    }
+
+    .quote {
+        top: 0%;
+        left: 40%;
+        max-width: 20%;  
+    }
+
+    .bg {
+        height: 80%;
+        max-width: 100%;
+        left: 0%;
+    }
+
+    .img .imag {
+        top: 4%;
+        width: 75%;
+        height: 33%;       
+        right: 12%;        
+    }   
+    
+    .next-prev {       
+        top: 34%;
+        right: 32%;
+    }
+
+    .txt:first-child {
+        width: 90%;
+        font-size: 16px;
+        text-align: center;
+        top: 52%;
+        left: 5%;
+    }    
 }
